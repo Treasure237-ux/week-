@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML, list, images, table  & forms</title>
+       <title>week 2 assignment</title> 
     </head>
-    <body style="background-color: blueviolet;">
-        <h1>HTML lists</h1>
-        <h3>Ordered list</h3>
-        <ol type="i" start="1">
-            <li>Software Engineering</li>
-            <li>Web Development</li>
-            <li>python</li>
-            <li>Database management</li>
-            <li>Startup bulding</li>
+    <body>
+        <h3>ordered lists</h3>
+        <ol type="i">
+            <li>fruits</li>
+            <li>drinks</li>
+            <li>foods</li>
+            <li>snacks</li>
         </ol>
-        <h3>Un-ordered lists</h3>
-        <ul type="square">
-            <li>Bro Jude</li>
-            <li>Bro wede</li>
-            <li>Bro Joseph</li>
-            <li>Sis Brender</li>
-        </ul>
-        <h3>Definition lists</h3>
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hyper Text Makeup Language</dd>
-            <dt>SQL</dt>
-            <dd>Structered Query Language</dd>
-        </dl>
-        <h1>HTML Images</h1>
-        <img src="flag.jpg" alt="Image of a girl holding a flag" width="350" height="550">
-        <h1>HTML Tables</h1>
-        <table border="2">
-            <caption>Little Information</caption>
+        <h3>External image</h3>
+        <img src="flag.jpg" alt="Image of a girl holding a flag" style="width:350px; height:550px;">
+        <h3>Adding table</h3>
+        <table border="5">
             <thead>
                 <tr>
-                    <th>Names</th>
-                    <th>Networth</th>
-                    <th>Single</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Treasure</td>
-                    <td>900bn</td>
-                    <td>yes</td>
+                    <td>sapele, Nigeria</td>
+                    <td>+2348113606758</td>
+                    <td>itreasure237@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>meshack</td>
+                    <td>kenya</td>
+                    <td>+2338190886754</td>
+                    <td>meshackmwangemi25@gmail.com</td>
                 </tr>
                 <tr>
                     <td>Jonathan</td>
-                    <td>500bn</td>
-                    <td>yes</td>
+                    <td>sapele, nigeria</td>
+                    <td>+2347059408401</td>
+                    <td>jboyokis@gmail.com</td>
                 </tr>
                 <tr>
-                    <td>Victory</td>
-                    <td>200bn</td>
-                    <td>no</td>
+                    <td>Destiny</td>
+                    <td>Warri, Nigeria</td>
+                    <td>+2349016035353</td>
+                    <td>dboy1@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Derick</td>
+                    <td>Lagos, Nigeria</td>
+                    <td>+2348064068731</td>
+                    <td>derick1@gmail.com</td>
                 </tr>
             </tbody>
-            <tfoot>
-                <th>Names</th>
-                <th>Networth</th>
-                <th>Single</th>
-            </tfoot>
         </table>
-        <h1>HTML Forms
+        <h3>Registration form</h3>
         <form action="">
-            <label for="name">Name:</label>
-            <input type="text" id="student_name" name="student_name" required>
+            <label for="name">name:</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Enter your name" required>
             <br><br>
-            <label for="gender">Gender:</label>
-            <input type="Radio" id="gender" name="gender" value="Female">Female
-            <input type="Radio" id="gender" name="gender" value="Male">Male
+            <label for="Email">Email address:</label>
+            <input type="Email" id="Email" name="UserEmail" placeholder="Enter your email" required>
             <br><br>
-            <label for="hobbies">Hobbies:</label>
-            <input type="checkbox" name="hobbies" value="sports">sports
-            <input type="checkbox" name="hobbies" value="arts">Arts
-            <input type="checkbox" name="hobbies" value="music">music
-            <input type="checkbox" name="hobbies" value="Travel">Travel
+            <label for="password">Input  password:</label>
+            <input type="password" name="password" minlength="8" maxlength="20" placeholder="input password" required>
             <br><br>
-            <label for="country">Country:</label>
+            <label for="country">Select country:</label>
             <select name="country" id="country">
                 <option>--Select country--</option>
                 <option value="Nigeria">Nigeria</option>
-                <option value="Ghana">Ghana</option>
-                <option value="Kenya">Kenya</option>
+                <option value="south africa">South Africa</option>
+                <option value="Egpyt">Egpyt</option>
+                <option value="sudan">Sudan</option>
+                <option value="ghana">Ghana</option>
             </select>
             <br><br>
-            <label for="description">Describe yourself:</label>
-            <textarea name="description" id="description"></textarea>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+            <br><br>
+            <label for="maritial status">Maritial status:</label>
+            <input type="radio" name="maritial status" value="married">Married
+            <input type="radio" name="maritial status" value="single">Single
+            <br><br>
+            <label for="favourite">Favourite module:</label>
+            <input type="checkbox" name="favourite" value="software engineering">Software Engineering
+            <input type="checkbox" name="favourite" value="web development">Web Development
+            <input type="checkbox" name="favourite" value="database management">Database management
+            <input type="checkbox" name="favourite" value="python programming">Python Programming
+            <input type="checkbox" name="favourite" value="startup building">Startup Building 
             <br><br>
             <button>Register</button>
-            <input type="button" value="cancle">
-        </form>    
-        </h1>
+            <button>Cancle</button>
+        </form>
     </body>
 </html>
